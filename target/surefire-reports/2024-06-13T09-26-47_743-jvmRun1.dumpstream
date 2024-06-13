@@ -1,0 +1,4 @@
+# Created at 2024-06-13T09:27:02.407
+
+com.letshoptests.TestCase1.selectandAppProductZara() depends on nonexistent method loginToLetshopApp
+

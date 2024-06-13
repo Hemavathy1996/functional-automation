@@ -6,7 +6,7 @@
 	</listeners>
   <test thread-count="5" name="LetShop Automation Test">
     <classes>	
-      <class name="demo.ListenerDemoTest"/>
+      <class name="com.letshoptests.TestCase1"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

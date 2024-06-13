@@ -9,7 +9,7 @@ import productpage.ProductPage;
 public class TestCase1 extends BaseClass {
      
 	@Test
-	 public void logintoApp() throws IOException
+	 public void loginToLetshopApp() throws IOException
 	 {
 		 Loginpage loginPage= new Loginpage(driver);
 		 loginPage.enterEmail("hema08@rahulshetty.com");
@@ -26,7 +26,7 @@ public class TestCase1 extends BaseClass {
     	
         homepage.clickToViewZara();
         
-		Productpage.ClickAddTocart();
+        productpage.ClickAddToCart();
 		
 		captureScreenshot();	 
 

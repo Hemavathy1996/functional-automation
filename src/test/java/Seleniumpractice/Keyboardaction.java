@@ -17,7 +17,7 @@ public class Keyboardaction {
 	     rl.click();
 	     Thread.sleep(10000);
 	     Actions a = new Actions(driver);
-	     a.sendKeys("selenium");
+	     a.sendKeys("selenium")
 	     .keyDown(Keys.CONTROL)
 	     .keyDown("a")
 	     .keyUp("a")

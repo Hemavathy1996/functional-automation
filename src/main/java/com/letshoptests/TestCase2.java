@@ -1,10 +1,11 @@
 package com.letshoptests;
 import org.openqa.selenium.WebDriver;
+
 import org.testng.annotations.Test;
 
+import com.pageobjectmodel.Homepage;
 import com.pageobjectmodel.Loginpage;
-import com.pageobjectmodel.letshop.LoginPage;
-import com.pageobjectmodelletshop.Homepage;
+
 
 import comLetsshop.BaseClass;
 import productpage.ProductPage;
@@ -23,13 +24,13 @@ public class TestCase2 extends BaseClass {
 	    public void selectAndAppProductIphone()
 	     {
 	    	
-			Homepage homepage= new Homepage(driver);
+			 Homepage homepage= new  Homepage(driver) ;
 	    	
 	    	ProductPage productpage= new ProductPage(driver);
 	    	
 	        homepage.clickToViewIphone();
 	        
-			ProductPage.ClickAddToCart();
+	        productpage.ClickAddToCart();
 			
 			productpage.ClickCartToView();
 }

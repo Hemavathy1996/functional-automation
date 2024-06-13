@@ -15,7 +15,7 @@ public class ExternalDataReader {
 		File f = new File(System.getProperty("user.dir"+"/data_sheets/testdata"));
 		XSSFWorkbook workbook= new XSSFWorkbook(f);
 		XSSFSheet sheet= workbook.getSheetAt(0);
-		XSSFRow row sheet.getRow(1);
+		XSSFRow row =sheet.getRow(1);
 		String username=row.getCell(0).toString();
 		return username;
 		
@@ -25,7 +25,7 @@ public class ExternalDataReader {
 		File f = new File(System.getProperty("user.dir"+"/data_sheets/testdata"));
 		XSSFWorkbook workbook= new XSSFWorkbook(f);
 		XSSFSheet sheet= workbook.getSheetAt(0);
-		XSSFRow row sheet.getRow(1);
+		XSSFRow row= sheet.getRow(1);
 		String password=row.getCell(1).toString();
 		return password;
 }

@@ -24,7 +24,7 @@ public class Productpage {
 	
 	@FindBy(xpath="//button[contains(text(),'Checkout')]")
 	WebElement checkoutBtn;
-public static void ClickAddTocart()
+public void ClickAddTocart()
 	{
 		driver.findElement(addTocartBtn).click();
 	}
